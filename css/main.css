@@ -192,10 +192,10 @@ textarea {
         height: 600px;
     }
     .disclaimer h1{
-        font-size: 6rem;
+        font-size: 8rem;
     }
     .disclaimer h2{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     /*form*/
     .form-send{
@@ -233,7 +233,7 @@ textarea {
         height: 480px;
     }
     .disclaimer h1{
-        font-size: 6rem;
+        font-size: 6.5rem;
     }
     .disclaimer>h2{
         font-size: 1.2rem;
@@ -289,7 +289,7 @@ textarea {
 }
 .meios li{
     padding: 5px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .contatUs h2{
@@ -303,12 +303,12 @@ textarea {
 }
 @media (max-width:1600px){
     .map{
-        width: 600px;
+        width: 800px;
     }
 }
 @media (max-width:1366px){
     .map{
-        width: 400px;
+        width: 600px;
     }
     .contatUs h2 {
         font-size: 2rem;
@@ -393,8 +393,11 @@ textarea {
         font-size: 16px;
     }
     .form-send{
-        width: 400px;
+        width: 450px;
         height: 400px;
+    }
+    .form-send >h2{
+        font-size: 2rem;
     }
 }
 @media screen and (max-width:760px){
@@ -426,5 +429,69 @@ textarea {
     .about{
         width: 550px;
         height: 350px;
+    }
+    .disclaimer h1{
+        font-size: 5.5rem;
+    }
+    .disclaimer h2{
+        font-size: 1.6rem;
+    }
+}
+@media screen and (max-width:590px){
+    .video-form{
+        margin-top: 20px;
+        height: 650px;
+    }
+    .media{
+        width: 450px;
+        height: 300px;
+    }
+    .about{
+        width: 450px;
+        height: 300px;
+        padding: 20px
+    }
+    
+    .meios li{
+        font-size: 15px;
+    }
+    .form-send{
+        width: 320px;
+        height: 450px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .disclaimer{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 30px;
+    }
+    .disclaimer h1{
+        font-size: 5.3rem;
+    }
+    .disclaimer h2{
+        font-size: 1.4rem;
+    }
+    .menu{
+        display: none;
+    }
+}
+@media screen and (max-width:480px){
+    .media{
+        width: 380px;
+        height: 260px;
+    }
+    .about{
+        width: 380px;
+        height: 300px;
+        padding: 1px
+    }
+    .video-form{
+        margin-top: 20px;
+        height: 550px;
+    }
+    .depoiment>h2{
+        padding-top: 50px;
     }
 }
