@@ -40,10 +40,13 @@ li{
     font-size: 1.5rem;
     list-style-type: none;
 }
-a:link, a:visited,  a:hover, a:active
+a:link, a:visited, a:active
 {color: #ffffff; 
     text-shadow: 0 0 15px rgba(15, 15, 15, 0.7), 0 0 10px rgba(19, 19, 19, 0.7);
     text-decoration: none;
+}
+a:hover{
+    color: #a3a2a2;
 }
 /*disclaimer*/
 
