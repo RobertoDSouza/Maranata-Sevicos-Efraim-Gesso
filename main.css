@@ -68,7 +68,12 @@ a:link, a:visited,  a:hover, a:active
 }
 .disclaimer h1, .disclaimer h2{
     color: #ffffff; 
-    text-shadow: 0 0 15px rgba(15, 15, 15, 0.7), 0 0 10px rgba(19, 19, 19, 0.7);
+    text-shadow: 
+    0 0 7px rgb(0, 0, 0),
+    0 0 10px rgb(0, 0, 0),
+    0 0 21px rgb(0, 0, 0),
+    0 0 102px rgb(0, 0, 0),
+    0 0 151px rgb(0, 0, 0);
 }
 /*form*/
 
@@ -222,10 +227,16 @@ textarea {
     padding-top:30px ;
 }
 .map{
-    width: 1000px;
-    padding-top: 10px;
+    padding-top: 25px;
+    height: 35vh;
+    width: 50vw;
+    max-height: 255px;
+    max-width: 800px;
 }
-
+.map>img{
+    width: 100%;
+    height: 100%;  
+}
 
 .foot{
     width: 100vw;
@@ -359,6 +370,9 @@ textarea {
     }
 }
 @media screen and (max-width:590px){
+    .container-head{
+        height: 50px;
+    }
     .video-form{
         margin-top: 20px;
         height: 650px;
@@ -461,6 +475,23 @@ textarea {
         width: 300px;
         height: 200px;
     }
+    .contatUs{
+        height: 360px;
+    }
+    .media{
+        width: 300px;
+        height: 200px;
+    }.about{
+        width: 300px;
+        height: 280px;
+        padding: 5px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .text{
+        padding-top: 10px;
+    }
 }
 @media screen and (max-height:670px){
     
@@ -509,5 +540,8 @@ textarea {
     }
     .call{
         margin-top: 22px;
+    }
+    .contatUs{
+        height: 360px;
     }
 }
