@@ -2,7 +2,7 @@
     box-sizing: border-box; 
     margin: 0 auto;
     padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     list-style: none;
 }
 
@@ -12,83 +12,53 @@ body
     width: 100%;
     overflow-x: hidden;
     
+    background-color: #F7F7F7;
 }
 
 
-.logo>p{
-    margin-left: 50px;
-    font-size: 2.1rem;
-    color:white;
-}
-.menu{
-    display: flex;
-    padding: 5px;
-}
-li{
-    padding-right: 20px;
-    font-size: 1.5rem;
-    list-style-type: none;
-}
-a:link, a:visited, a:active
-{color: #ffffff; 
-    text-shadow: 0 0 15px rgba(15, 15, 15, 0.7), 0 0 10px rgba(19, 19, 19, 0.7);
-    text-decoration: none;
-}
-a:hover{
-    color: #a3a2a2;
-}
 
 /*disclaimer*/
 
 
 .disclaimer{
-    background-repeat: no-repeat;
-    background-image: url(img/banner.png);
-    background-size: cover;
     width: 100vw;
-    height: 80vh;
+    height: 60vh;
     display: flex;
     text-align: center;
     align-items:center;
-    padding-right:50%;
 }
 .disclaimer img{
-    width: 350px;
+    width: 600px;
     padding-top: 100px;
 }
 .disclaimer h1{
-    font-size: 50px;
+    font-size: 70px;
 }
 .disclaimer h2{
     padding-top: 10px;
-    padding-bottom: 35px;
-    font-size: 25px;
+    padding-bottom: 10px;
+    font-size: 30px;
 }
 .disclaimer h1, .disclaimer h2{
-    color: #ffffff; 
-    text-shadow: 
-    0 0 7px rgb(0, 0, 0),
-    0 0 10px rgb(0, 0, 0),
-    0 0 21px rgb(0, 0, 0),
-    0 0 102px rgb(0, 0, 0),
-    0 0 151px rgb(0, 0, 0);
+    color: #000000; 
+    
 }
 .disclaimer button{
 
     border: none;
     border-radius: 20px;
-    height: 80px;
-    width: 240px;
-    font-size: 24px;
+    height: 70px;
+    width: 260px;
+    font-size: 20px;
     text-align: center;
     font-weight: bold;
-    background-color: rgba(153, 18, 18, 0.5);
+    background-color: rgba(153, 18, 18, 1);
     color: #ffffff;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
     cursor: pointer;
 }
 .disclaimer button:hover{
-    font-size: 28px;
+    transform: scale(1.05);
 
 }
 
@@ -101,7 +71,7 @@ a:hover{
     padding-top: 50px;
 }
 .serviços h2{
-    padding-top: 50px;
+    padding-top: 100px;
     font-size: 3rem;
 }
 .cards-services{
@@ -111,21 +81,29 @@ a:hover{
     flex-wrap: wrap;
     max-width: 1200px;
 }
-.card{
-    font-size: 20px;
+.card.mb-3{
     cursor: pointer;
     transition: 0.2s ease-in-out;
+    width: 580px;
 }
+.card-body{
+    height: 120px;
+}
+.card p{
+    font-size: 30px;
+}
+
 .card:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     z-index: 99;
 }    
 .card button{
+    margin-bottom: 5px;
     border: none;
     border-radius: 10px;
     height: 40px;
-    width: 180px;
-    font-size: 14px;
+    width: 270px;
+    font-size: 13px;
     text-align: center;
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0.5);
@@ -156,20 +134,20 @@ a:hover{
     justify-content: space-around;
     align-items: center;
 }
-.video{
-    width: auto;
-    height: auto;
+.video-form img{
+
+    width: 650px;
 }
 .media{
-    width: 720px;
-    height: 480px;
+    width: 1024px;
+    height: 550px;
     border-radius: 20px;
 }
 .about{
         width: 320px;
         height: 500px;
-        background: rgba(0, 0, 0, 0.7);
-        box-shadow: 0 8px 32px 0 rgba(44, 44, 44, 0.5);
+        background-image: url(img/fundosobre.jpg);
+        text-shadow: 2px 2px 4px rgb(44, 44, 44);
         backdrop-filter: blur( 10px );
         -webkit-backdrop-filter: blur( 10px );
         -moz-backdrop-filter: blur( 10px );
@@ -190,6 +168,8 @@ a:hover{
     text-align: center;
     align-items: center;
     justify-content: center;
+    font-size: 17px;
+    font-weight: 600;
 }
 
 
@@ -205,6 +185,8 @@ a:hover{
     text-align: center;
     color: #333333;
     font-size: 3rem;
+    margin-top: 60px;
+    margin-bottom: -100px;
 }
 .contatUs{
     height: 300px;
@@ -221,31 +203,16 @@ a:hover{
 }
 .meios li{
     padding: 5px;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .meios> h2{
     text-align: center;
-    font-size: 25px;
+    font-size: 28px;
     padding-top:30px ;
 }
 
-.meios button{
-    border: none;
-    border-radius: 20px;
-    height: 3rem;
-    width: 14rem;
-    font-size: 1rem;
-    text-align: center;
-    font-weight: bold;
-    background-color: rgba(153, 18, 18, 0.5);
-    color: #ffffff;
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
-}
-.meios button:hover{
-    font-size: 1.1rem;
-}
+
 .map{
     padding-top: 25px;
     height: 35vh;
@@ -258,6 +225,40 @@ a:hover{
     height: 100%;  
 }
 
+.ajuda{
+    padding-top: 20px;
+    height: 100vh;
+    max-width:1280px ;
+    display: block;
+    text-align: center;
+}
+.ajuda h2{
+    font-size: 3rem;
+}
+.ajuda h3{
+    font-size: 1.5rem;
+    padding-top: 20px;
+    padding-bottom:10px ;
+}
+.ajuda li{
+    padding-top: 15px;
+}
+.ajuda button{
+    border: none;
+    border-radius: 20px;
+    height: 70px;
+    width: 260px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(153, 18, 18, 1);
+    color: #ffffff;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+.ajuda button:hover{
+    transform: scale(1.05);
+}
 .foot{
     width: 100vw;
     height: 80px;
@@ -285,17 +286,40 @@ a:hover{
     padding-right: 8px;
 }
 
+@media (max-height:780px){
+    .text img{
+        padding-top: 140px;
+    }
+    .depoiment{
+        height: 800px;
+    }
+    .media{
+        height: 420px;
+        width: 640;
+    }
+    .video-form{
+        margin-top: 80px;
+    }
+    .video-form img{
+
+        width: 650px;
+    }
+}
+
 @media (max-width:1023px){
     .video-form{
         display: block;
         padding-top: 20px;
+        justify-items: center;
+        text-align: center;
+        height: auto;
     }
     .video{
         text-align: center;
 
     }
     .media{
-        width: 640px;
+        width: 600px;
         height: 360px;
     }
 
@@ -304,8 +328,8 @@ a:hover{
         padding-bottom: 20px;
     }
 
-    .about{
-        width: 650px;
+    .video-form .about{
+        width: 600px;
         height: 250px;
         padding: 20px;
     }
@@ -323,21 +347,32 @@ a:hover{
         font-size: 15px;
     }
     .video-form{
-        height: 680px;
+        height: 700px;
+    }
+    .video-form img{
+        width: 600px;
     }
     .about{
         width: 650px;
         height: 250px;
         padding: 20px;
     }
-    
+    .contatUs{
+        height: 220px;
+        margin-top: 150px;
+    }
     .meios h2{
         font-size: 25px;
     }
     .meios li{
         font-size: 16px;
     }
+    .ajuda{
+        margin-top: 250px;
+        height: 500px;
+    }
     
+
 }
 
 @media screen and (max-width:790px){
@@ -347,6 +382,7 @@ a:hover{
         background-image: url(img/banner2.png);
         background-size: cover;
     }.disclaimer img{
+        width: 480px;
         padding-top: 10px;
     }
     .disclaimer h1{
@@ -361,8 +397,25 @@ a:hover{
     .map{
         width: 500px;
     }
+    .video-form .about{
+        width: 480px;
+        height: 250px;
+        padding: 15px;
+    }
+    .video-form img{
+        width: 480px;
+    }
+    .ajuda{
+     margin-top: 150px;
+        
+    }
 }
 @media screen and (max-width:590px){
+    .card.mb-3{
+        width: 450px;
+        height: 520px;
+    }
+    
     .container-head{
         height: 50px;
     }
@@ -396,49 +449,63 @@ a:hover{
     
     .depoiment>h2{
         font-size:40px ;
+        padding-bottom: 80px;
     }
     .serviços>h2{
         font-size:40px;
     }
 }
 @media screen and (max-width:480px){
-    
+    .disclaimer{
+        padding:0;
+        height: 450px;
+   }
     .disclaimer h1{
-        font-size: 40px;
+        font-size: 45px;
     }
     .disclaimer h2{
         font-size: 20px;
     }
     .disclaimer img{
-        width: 300px;
+        width: 350px;
     }
     .disclaimer button{
 
         height: 60px;
-        width: 180px;
-        font-size: 20px;
+        width: 240px;
+        font-size: 18px;
     }
     .disclaimer button:hover{
         font-size: 24px;
     }
     .media{
         width: 350px;
-        height: 220px;
+        height: 350px;
     }
-    .about{
+    .video-form .about{
         width: 380px;
-        height: 300px;
-        padding: 1px
+        height: 350px;
+        padding: 25px
+    }
+    .video-form img{
+        width: 350px;
+    }
+    .ajuda h2{
+        font-size: 30px;
+    }
+    .ajuda h3{
+        font-size: 20px;
     }
     .video-form{
         margin-top: 20px;
         height: 550px;
     }
     .depoiment>h2{
-        font-size:32px ;
+        font-size:35px ;
     }
     .serviços>h2{
         font-size:32px;
+        padding-top: 20px;
     }
     .about{
         width: 300px;
@@ -460,15 +527,26 @@ a:hover{
         padding-top: 5px;
     }
     .map{
-        height: auto;
+        height: 500px;
         width: 100vw;
     }
     .contatUs{
         height: 440px;
     }
-    
+    .ajuda{
+        margin-top: 50px;
+    }
 }
 @media screen and (max-width:380px){
+   .disclaimer{
+        padding:0;
+        height: 520px;
+   }
+   .serviços{
+    padding-top:0px;
+   }.card.mb-3{
+    height: 460px;
+   }
     .media{
         width: 300px;
         height: 200px;
@@ -478,18 +556,31 @@ a:hover{
     }
     .media{
         width: 300px;
-        height: 200px;
-    }.about{
-        width: 300px;
-        height: 280px;
-        padding: 5px;
+        height: 450px;
     }
-    p{
+    .video-form .about{
+        width: 300px;
+        height: 350px;
+        padding: 20px;
+    }
+    .depoiment{
+        height: 750px;
+        padding-top: 20px;
+    }
+    .ajuda{
+        height: 700px;
+        padding-top: 100px;
+    }
+    .about p{
         font-size: 15px;
     }
     .text{
         padding-top: 10px;
     }
+    .contatUs{
+        height: 380px;
+    }
+    
 }
 @media screen and (max-height:670px){
     
@@ -498,7 +589,7 @@ a:hover{
         height: 200px;
     }
     .disclaimer{
-        height: 500px;
+        height: 450px;
     }
     
     .form-send{
@@ -509,7 +600,7 @@ a:hover{
         padding-top: 10px;
     }
     .disclaimer h1{
-        font-size: 40px;
+        font-size: 30px;
     }
     .disclaimer h2{
         font-size: 15px;
@@ -528,16 +619,17 @@ a:hover{
         font-size: 25px;
     }
     .video-form{
-        height: 450px;
+        height: 750px;
+    }
+    .media{
+        height: 400px;
+        width: 350px;
     }
     .form-send>h2{
         font-size: 20px;
     }
     
-    .call{
-        margin-top: 22px;
-    }
     .contatUs{
-        height: 360px;
+        height: 380px;
     }
 }
