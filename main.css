@@ -87,7 +87,7 @@ a:hover{
     transition: 0.5s ease-in-out;
     cursor: pointer;
 }
-.disclaimer button:hover,.meios-button button:hover{
+.disclaimer button:hover{
     font-size: 28px;
 
 }
@@ -137,21 +137,20 @@ a:hover{
 
 @keyframes wide {
     0% {
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.05);
     }
   
     50% {
-        background-color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(78, 78, 78, 0.7);
     }
     100% {
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.05);
     }
   }
 /*section video*/
 
 .video-form{
     display:flex;
-    max-height: 600px;
     height: 80vh;
     max-width:1280px ;
     justify-content: space-around;
@@ -196,8 +195,8 @@ a:hover{
 
 /*Depoimento com video e texto*/
 .depoiment{
-    padding-top: 120px;
-    height: 90vh;
+    padding-top: 80px;
+    height: 100vh;
     max-width:1280px ;
     display: block;
 }
@@ -230,21 +229,22 @@ a:hover{
     font-size: 25px;
     padding-top:30px ;
 }
-.meios-button{
-    padding-top: 20px;
-}
-.meios-button button{
+
+.meios button{
     border: none;
     border-radius: 20px;
-    height: 80px;
-    width: 240px;
-    font-size: 24px;
+    height: 3rem;
+    width: 14rem;
+    font-size: 1rem;
     text-align: center;
     font-weight: bold;
     background-color: rgba(153, 18, 18, 0.5);
     color: #ffffff;
     transition: 0.2s ease-in-out;
     cursor: pointer;
+}
+.meios button:hover{
+    font-size: 1.1rem;
 }
 .map{
     padding-top: 25px;
@@ -310,7 +310,10 @@ a:hover{
         padding: 20px;
     }
     .depoiment>h2{
-        padding-bottom: 20px;
+        font-size:40px ;
+    }
+    .serviços>h2{
+        font-size:40px;
     }
     
     .meios >h2{
@@ -334,13 +337,7 @@ a:hover{
     .meios li{
         font-size: 16px;
     }
-    .form-send{
-        width: 280px;
-        height: 360px;
-    }
-    .form-send >h2{
-        font-size: 2rem;
-    }
+    
 }
 
 @media screen and (max-width:790px){
@@ -396,14 +393,12 @@ a:hover{
         padding-top: 30px;
     }
     
-    .menu{
-        display: none;
-    }
-    .logo{
-        margin: 0;
-    }
+    
     .depoiment>h2{
-        font-size:30px ;
+        font-size:40px ;
+    }
+    .serviços>h2{
+        font-size:40px;
     }
 }
 @media screen and (max-width:480px){
@@ -440,8 +435,10 @@ a:hover{
         height: 550px;
     }
     .depoiment>h2{
-        font-size: 25px;
-        padding-top: 50px;
+        font-size:32px ;
+    }
+    .serviços>h2{
+        font-size:32px;
     }
     .about{
         width: 300px;
@@ -452,7 +449,7 @@ a:hover{
         display: block;
     }
     .call{
-        height: 150px;
+        height: 200px;
         display: flex;
     }
     .meios li{
@@ -536,9 +533,7 @@ a:hover{
     .form-send>h2{
         font-size: 20px;
     }
-    input,textarea{
-        font-size: 15px;
-    }
+    
     .call{
         margin-top: 22px;
     }
