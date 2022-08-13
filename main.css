@@ -3,6 +3,7 @@
     margin: 0 auto;
     padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style: none;
 }
 
 
@@ -10,61 +11,34 @@ body
 { 
     width: 100%;
     overflow-x: hidden;
-       
+    
 }
-.container-head{
-    position: sticky;
-    top: 0;
-    z-index: 99;
-    display: flex;
-    width: 100vw;
-    height: 60px;
-    background: rgba(51, 51, 51,0.6);
-    box-shadow: 0 8px 32px 0 rgba(215, 218, 245, 0.2);
-    backdrop-filter: blur( 3px );
-    -webkit-backdrop-filter: blur( 3px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-  }
 
-.logo>p{
-    margin-left: 50px;
-    font-size: 2.1rem;
-    color:white;
-}
-.menu{
-    display: flex;
-    padding: 5px;
-}
-li{
-    padding-right: 20px;
-    font-size: 1.5rem;
-    list-style-type: none;
-}
-a:link, a:visited,  a:hover, a:active
-{color: #ffffff; 
-    text-shadow: 0 0 15px rgba(15, 15, 15, 0.7), 0 0 10px rgba(19, 19, 19, 0.7);
-    text-decoration: none;
-}
 /*disclaimer*/
 
+
 .disclaimer{
-    background-image: url(img/img1.png);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-image: url(img/banner.png);
+    background-size: cover;
     width: 100vw;
     height: 80vh;
-    max-width:1366px ;
     display: flex;
     text-align: center;
-    align-items: center;
-    padding:5%;
+    align-items:center;
+    padding-right:50%;
 }
-
+.disclaimer img{
+    width: 350px;
+    padding-top: 100px;
+}
 .disclaimer h1{
-    font-size: 80px;
+    font-size: 50px;
 }
 .disclaimer h2{
-    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 35px;
+    font-size: 25px;
 }
 .disclaimer h1, .disclaimer h2{
     color: #ffffff; 
@@ -75,81 +49,85 @@ a:link, a:visited,  a:hover, a:active
     0 0 102px rgb(0, 0, 0),
     0 0 151px rgb(0, 0, 0);
 }
-/*form*/
+.disclaimer button{
 
-.form-send {
-    font-size: 0.8rem;
-    background: rgba(15, 15, 15, 0.5);
-    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur( 3px );
-    -webkit-backdrop-filter: blur( 3px );
-    -moz-backdrop-filter: blur( 3px );
-    -o-backdrop-filter: blur( 3px );
-    -ms-backdrop-filter: blur( 3px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: none;
     border-radius: 20px;
-    width: 320px;
-    height: 400px;
-    margin-top: 20px;
-}
-
-.form-send h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-    color: #ffffff; 
-    text-shadow: 0 0 15px rgba(0, 0, 0, 0.5), 0 0 10px rgba(231, 231, 231, 0.5);
-}
-
-input, textarea {
-    width: 80%;
-    padding: 3%;
-    color: black;
-    margin-top: 4px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -o-border-radius: 5px;
-    -ms-border-radius: 5px;
-    border: 1px solid;
-    font-size: 15px;
-}
-
-input:hover, textarea:hover, input:focus, textarea:focus {
-    border-color: #000066;
-    box-shadow: 0px 0px 8px #ffffff;
-    background-color: #333333;
-    color: rgb(255, 255, 255);
+    height: 80px;
+    width: 240px;
+    font-size: 24px;
+    text-align: center;
     font-weight: bold;
-    font-size: 15px;
+    background-color: rgba(153, 18, 18, 0.5);
+    color: #ffffff;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.disclaimer button:hover,.meios-button button:hover{
+    font-size: 28px;
+
 }
 
-.enviar {
-    background-color: #ffffff;
-    height: 12%;
-    width: 25%;
+/*Carrousel */
+
+.serviços{
+    display: block;
+    text-align: center;
+    max-width: 1280px;
+    padding-top: 50px;
+}
+.serviços h2{
+    padding-top: 50px;
+    font-size: 3rem;
+}
+.cards-services{
+    padding-top: 50px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+.card{
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.1);
+    z-index: 99;
+}    
+.card button{
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 180px;
+    font-size: 14px;
+    text-align: center;
     font-weight: bold;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -o-border-radius: 5px;
-    -ms-border-radius: 5px;
-    border: 1px solid;
-    color: #333333;
-    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    animation: wide 2s infinite;
 }
 
-textarea {
-    width:80%;
-    height: 30%;
-    line-height: 20px;
-    max-width: 400px;
-    font-size: 18px;
-}
-
-
+@keyframes wide {
+    0% {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+  
+    50% {
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+    100% {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
 /*section video*/
 
 .video-form{
     display:flex;
+    max-height: 600px;
     height: 80vh;
     max-width:1280px ;
     justify-content: space-around;
@@ -160,8 +138,8 @@ textarea {
     height: auto;
 }
 .media{
-    width: 640px;
-    height: 360px;
+    width: 720px;
+    height: 480px;
     border-radius: 20px;
 }
 .about{
@@ -194,6 +172,7 @@ textarea {
 
 /*Depoimento com video e texto*/
 .depoiment{
+    padding-top: 120px;
     height: 90vh;
     max-width:1280px ;
     display: block;
@@ -203,7 +182,6 @@ textarea {
     text-align: center;
     color: #333333;
     font-size: 3rem;
-    border-bottom: 5px solid #333333;
 }
 .contatUs{
     height: 300px;
@@ -211,7 +189,9 @@ textarea {
     display: flex;
     color: #ffffff;
 }
-
+.call{
+    display: flex;
+}
 .contatUs .meios{
     display:block;
     padding: 0;
@@ -225,6 +205,22 @@ textarea {
     text-align: center;
     font-size: 25px;
     padding-top:30px ;
+}
+.meios-button{
+    padding-top: 20px;
+}
+.meios-button button{
+    border: none;
+    border-radius: 20px;
+    height: 80px;
+    width: 240px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(153, 18, 18, 0.5);
+    color: #ffffff;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 .map{
     padding-top: 25px;
@@ -259,9 +255,10 @@ textarea {
     
     padding-right: 10px;
 }
-.contact h4,.contact li{
+.contact>h4,.contact>li{
     padding-top: 25px;
     font-size: 15px;
+    padding-right: 8px;
 }
 
 @media (max-width:1023px){
@@ -291,10 +288,7 @@ textarea {
     .depoiment>h2{
         padding-bottom: 20px;
     }
-    .form-send{
-        width: 280px;
-        height: 360px;
-    }
+    
     .meios >h2{
         font-size: 25px;
     }
@@ -329,38 +323,16 @@ textarea {
     .disclaimer{
         display: block;
         padding: 100px;
-    }
-    .form-send{
-        width: 280px;
-        height: 360px;
-    }
-    input, textarea {
-        width: 80%;
-        padding: 1.5%;
-    }
-    .enviar{
-        height: 12%;
-        width: 30%;
-
-    }   
-    textarea{
-        width:80%;
-        height: 30%;   
-    }
-    .media{
-        width: 550px;
-        height: 350px;
-    }
-    .about{
-        width: 550px;
-        height: 250px;
-        padding: 20px;
+        background-image: url(img/banner2.png);
+        background-size: cover;
+    }.disclaimer img{
+        padding-top: 10px;
     }
     .disclaimer h1{
-        font-size: 70px;
+        font-size: 50px;
     }
     .disclaimer h2{
-        font-size: 15px;
+        font-size: 20px;
     }
     .disclaimer{
         padding-top: 20px;
@@ -411,20 +383,25 @@ textarea {
     }
 }
 @media screen and (max-width:480px){
-    .text{
-        padding-top: 50px;
-    }
+    
     .disclaimer h1{
-        font-size: 60px;
+        font-size: 40px;
     }
     .disclaimer h2{
-        font-size: 15px;
+        font-size: 20px;
     }
-    .form-send{
-        width: 220px;
-        height: 300px;
+    .disclaimer img{
+        width: 300px;
     }
+    .disclaimer button{
 
+        height: 60px;
+        width: 180px;
+        font-size: 20px;
+    }
+    .disclaimer button:hover{
+        font-size: 24px;
+    }
     .media{
         width: 350px;
         height: 220px;
