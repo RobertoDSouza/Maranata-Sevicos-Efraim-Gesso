@@ -269,12 +269,12 @@ body
     font-size: 5px;
     display: flex;
 }
-.contact li, .contact a{
+.contact li, .contact a,.contact a:visited,.contact a:active, .contact a:link{
     cursor: pointer;
     text-decoration: none;
     color: #ffffff;
 }
-.contact li:hover{
+.contact li:hover,.contact a:hover{
     text-shadow:
     0 0 7px #fff,
     0 0 10px #fff,
