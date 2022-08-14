@@ -97,7 +97,7 @@ body
     transform: scale(1.05);
     z-index: 99;
 }    
-.card button{
+.card .btn1{
     margin-bottom: 5px;
     border: none;
     border-radius: 10px;
@@ -112,6 +112,22 @@ body
     cursor: pointer;
     animation: wide 2s infinite;
 }
+.card .btn2{
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 270px;
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    animation: wide2 2s infinite ;
+   
+}
 
 @keyframes wide {
     0% {
@@ -123,6 +139,17 @@ body
     }
     100% {
         background-color: rgba(255, 255, 255, 0.05);
+    }
+  }@keyframes wide2 {
+    0% {
+        background-color: rgba(78, 78, 78, 0.7);
+    }
+  
+    50% {
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+    100% {
+        background-color: rgba(78, 78, 78, 0.7);
     }
   }
 /*section video*/
@@ -188,42 +215,8 @@ body
     margin-top: 60px;
     margin-bottom: -100px;
 }
-.contatUs{
-    height: 300px;
-    background-color: #333333;
-    display: flex;
-    color: #ffffff;
-}
-.call{
-    display: flex;
-}
-.contatUs .meios{
-    display:block;
-    padding: 0;
-}
-.meios li{
-    padding: 5px;
-    font-size: 16px;
-}
-
-.meios> h2{
-    text-align: center;
-    font-size: 28px;
-    padding-top:30px ;
-}
 
 
-.map{
-    padding-top: 25px;
-    height: 35vh;
-    width: 50vw;
-    max-height: 255px;
-    max-width: 800px;
-}
-.map>img{
-    width: 100%;
-    height: 100%;  
-}
 
 .ajuda{
     padding-top: 20px;
@@ -275,6 +268,22 @@ body
     
     font-size: 5px;
     display: flex;
+}
+.contact li, .contact a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+}
+.contact li:hover{
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(255, 255, 255),
+    0 0 82px rgb(255, 255, 255),
+    0 0 92px rgb(255, 255, 255),
+    0 0 102px rgb(255, 255, 255),
+    0 0 151px rgb(255, 255, 255);
 }
 .contact h4{
     
@@ -340,12 +349,6 @@ body
         font-size:40px;
     }
     
-    .meios >h2{
-        font-size: 25px;
-    }
-    .meios>li{
-        font-size: 15px;
-    }
     .video-form{
         height: 700px;
     }
@@ -357,18 +360,9 @@ body
         height: 250px;
         padding: 20px;
     }
-    .contatUs{
-        height: 220px;
-        margin-top: 150px;
-    }
-    .meios h2{
-        font-size: 25px;
-    }
-    .meios li{
-        font-size: 16px;
-    }
+
     .ajuda{
-        margin-top: 250px;
+        padding-top: 2%;
         height: 500px;
     }
     
@@ -394,9 +388,7 @@ body
     .disclaimer{
         padding-top: 20px;
     }
-    .map{
-        width: 500px;
-    }
+    
     .video-form .about{
         width: 480px;
         height: 250px;
@@ -406,7 +398,7 @@ body
         width: 480px;
     }
     .ajuda{
-     margin-top: 150px;
+     padding-top: 2%px;
         
     }
 }
@@ -433,9 +425,7 @@ body
         padding: 20px
     }
     
-    .meios li{
-        font-size: 15px;
-    }
+    
     .form-send{
         width: 280px;
         height: 360px;
@@ -512,29 +502,10 @@ body
         height: 350px;
         padding: 15px;
     }
-    .contatUs{
-        display: block;
-    }
-    .call{
-        height: 200px;
-        display: flex;
-    }
-    .meios li{
-        
-        padding: 0;
-    }
-    .meios>h2{
-        padding-top: 5px;
-    }
-    .map{
-        height: 500px;
-        width: 100vw;
-    }
-    .contatUs{
-        height: 440px;
-    }
+    
     .ajuda{
         margin-top: 50px;
+        height: 650px;
     }
 }
 @media screen and (max-width:380px){
@@ -544,19 +515,14 @@ body
    }
    .serviços{
     padding-top:0px;
-   }.card.mb-3{
+   }
+   .card.mb-3{
     height: 460px;
    }
+    
     .media{
         width: 300px;
-        height: 200px;
-    }
-    .contatUs{
-        height: 360px;
-    }
-    .media{
-        width: 300px;
-        height: 450px;
+        height: 350px;
     }
     .video-form .about{
         width: 300px;
@@ -569,7 +535,7 @@ body
     }
     .ajuda{
         height: 700px;
-        padding-top: 100px;
+        padding-top: 80px;
     }
     .about p{
         font-size: 15px;
@@ -577,16 +543,14 @@ body
     .text{
         padding-top: 10px;
     }
-    .contatUs{
-        height: 380px;
-    }
+   
     
 }
 @media screen and (max-height:670px){
     
     .media{
         width: 300px;
-        height: 200px;
+        height: 350px;
     }
     .disclaimer{
         height: 450px;
@@ -621,15 +585,9 @@ body
     .video-form{
         height: 750px;
     }
-    .media{
-        height: 400px;
-        width: 350px;
-    }
+    
     .form-send>h2{
         font-size: 20px;
     }
     
-    .contatUs{
-        height: 380px;
-    }
 }
