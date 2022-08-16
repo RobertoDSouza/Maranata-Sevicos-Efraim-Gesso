@@ -87,7 +87,7 @@ body
     width: 580px;
 }
 .card-body{
-    height: 120px;
+    height: 150px;
 }
 .card p{
     font-size: 30px;
@@ -101,7 +101,7 @@ body
     margin-bottom: 5px;
     border: none;
     border-radius: 10px;
-    height: 40px;
+    height: 60px;
     width: 270px;
     font-size: 13px;
     text-align: center;
@@ -116,7 +116,7 @@ body
     margin-bottom: 5px;
     border: none;
     border-radius: 10px;
-    height: 40px;
+    height: 60px;
     width: 270px;
     font-size: 13px;
     text-align: center;
