@@ -182,7 +182,7 @@ body
         -ms-backdrop-filter: blur( 10px );
         border: 1px solid rgba( 255, 255, 255, 0.18 );
         border-radius: 20px;
-        padding: 50px ;
+        padding: 40px ;
 }
 .about h2{
     color: white;
@@ -517,7 +517,7 @@ body
     padding-top:0px;
    }
    .card.mb-3{
-    height: 460px;
+    height: 500px;
    }
     
     .media{
@@ -538,7 +538,8 @@ body
         padding-top: 80px;
     }
     .about p{
-        font-size: 15px;
+        padding: 5px;
+        font-size: 14px;
     }
     .text{
         padding-top: 10px;
