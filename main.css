@@ -166,8 +166,8 @@ body
     width: 650px;
 }
 .media{
-    width: 1024px;
-    height: 550px;
+    width: 940px;
+    height: 500px;
     border-radius: 20px;
 }
 .about{
@@ -506,6 +506,13 @@ body
     .ajuda{
         margin-top: 50px;
         height: 650px;
+    }
+    .card-body{
+        height: 220px;
+        margin-bottom: 5px;
+    }
+    .card .btn1,.card .btn2{
+        height: 50px;
     }
 }
 @media screen and (max-width:380px){
