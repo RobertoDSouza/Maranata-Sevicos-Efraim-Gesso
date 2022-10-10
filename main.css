@@ -173,7 +173,7 @@ body
 .about{
         width: 320px;
         height: 500px;
-        background-image: url(img/fundosobre.jpg);
+        background-image: url(fundosobre.jpg);
         text-shadow: 2px 2px 4px rgb(44, 44, 44);
         backdrop-filter: blur( 10px );
         -webkit-backdrop-filter: blur( 10px );
@@ -254,7 +254,7 @@ body
 }
 .foot{
     width: 100vw;
-    height: 80px;
+    height: 50px;
     background: rgb(0, 0, 0);
     box-shadow: 0 8px 32px 0 rgba(215, 218, 245, 0.2);
     backdrop-filter: blur( 3px );
@@ -265,7 +265,7 @@ body
 }
 
 .foot ul{
-    
+    align-items: center;
     font-size: 5px;
     display: flex;
 }
@@ -373,7 +373,7 @@ body
     .disclaimer{
         display: block;
         padding: 100px;
-        background-image: url(img/banner2.png);
+        background-image: url(banner2.png);
         background-size: cover;
     }.disclaimer img{
         width: 480px;
@@ -510,9 +510,11 @@ body
     .card-body{
         height: 220px;
         margin-bottom: 5px;
+        width: calc(100vw - 5px);
     }
     .card .btn1,.card .btn2{
         height: 50px;
+        width: 250px;
     }
 }
 @media screen and (max-width:380px){
@@ -528,11 +530,11 @@ body
    }
     
     .media{
-        width: 300px;
+        width: calc(100vw - 5px);
         height: 350px;
     }
     .video-form .about{
-        width: 300px;
+        width: calc(100vw - 5px);
         height: 350px;
         padding: 20px;
     }
@@ -557,7 +559,7 @@ body
 @media screen and (max-height:670px){
     
     .media{
-        width: 300px;
+        width: calc(100vw - 5px);
         height: 350px;
     }
     .disclaimer{
@@ -578,7 +580,7 @@ body
         font-size: 15px;
     }
     .about{
-        width: 250px;
+        width: calc(100vw - 5px);
         height: 250px;
         padding: 12px;
     }
@@ -598,4 +600,10 @@ body
         font-size: 20px;
     }
     
+}
+@media (max-width:300px){
+    .text img{
+        width: calc(100vw - 5px);
+        text-align: center;
+    }
 }
